@@ -1,0 +1,50 @@
+name: Segnala un bug
+description: Qualcosa non funziona come dovrebbe
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versione dell'app
+      description: La trovi nello splash screen all'avvio («V x.y.z») o in Help → About.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows 11
+        - Windows 10
+        - Linux (KDE Plasma)
+        - Linux (altro desktop)
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Comando usato
+      options:
+        - Tastiera
+        - Joystick
+  - type: textarea
+    id: what
+    attributes:
+      label: Cosa è successo
+      description: Descrivi il problema e cosa ti aspettavi invece (es. firma letta, roccia mostrata, roccia vera).
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Come riprodurlo
+      placeholder: |
+        1. Inquadro la roccia con il radar
+        2. Premo il tasto ...
+        3. ...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshot e log
+      description: Se puoi, allega uno screenshot e il file logs/app.log (nella cartella dell'app).
