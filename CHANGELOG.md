@@ -3,6 +3,26 @@
 Tutte le modifiche di rilievo, versione per versione. Gli eseguibili si scaricano dalla
 pagina [Releases](https://github.com/rastlien78/SC-Radar-Signal/releases).
 
+## [1.1.0] — 2026-10-29
+
+### Nuovo
+- **Luogo di estrazione** (facoltativo): scegli dove stai minando (`Tools → Luogo di estrazione`,
+  anche in Impostazioni) e l'app mostra solo le rocce che si trovano lì. Se nel luogo scelto la
+  firma non corrisponde a niente, ti dice dove altro corrisponde.
+- **Calibrazione della zona di lettura con un solo schermo** (`Tools → Calibra ROI dal gioco`):
+  l'app si riduce a icona, torni in gioco, inquadri una roccia e premi il tasto di scansione;
+  il calibratore si apre sopra il gioco con la firma già visibile. Prima l'app fotografava se
+  stessa e chi non ha un secondo schermo non poteva calibrare.
+  - **Linux**: provato con il gioco.
+  - **Windows**: soluzione *probabile*, non ancora provata con il gioco. Se il calibratore non
+    compare sopra Star Citizen, segnalalo con il modulo dei bug.
+
+### Corretto
+- **Joystick**: assegnando il pulsante, l'app poteva prenderne subito uno a caso senza che
+  fosse premuto niente. Succedeva con levette o pulsanti che restano "accesi" (interruttori,
+  fermi della manetta). Ora vengono ignorati finché non li rilasci.
+- Dopo aver cambiato il pulsante del joystick ogni pressione faceva **due** scansioni.
+
 ## [1.0.0] — 2026-10-28
 
 Prima versione pubblica.
